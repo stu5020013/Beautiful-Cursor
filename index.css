@@ -1,0 +1,34 @@
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.cursor-outline {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cacaca;
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    display: block;
+    z-index: 9999999;
+}
